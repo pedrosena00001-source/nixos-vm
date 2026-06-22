@@ -61,8 +61,24 @@
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  programs.zsh = {
+          enable = true;
+          autosuggestions.enable = true;    
+          syntaxHighlighting.enable = true; 
+          enableCompletion = true;
+         ohMyZsh = {
+              enable = true;
+              theme = "cloud";
+              plugins = [
+                  "git"
+                  "sudo" 
+                  "history"
+                  "docker"
+          ];
+       };
+    };
 
-
+  users.users.pedro.shell = pkgs.zsh;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
