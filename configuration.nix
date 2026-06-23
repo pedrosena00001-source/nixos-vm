@@ -27,12 +27,11 @@
          enable = true;
          autoRepeatDelay = 200;
          autoRepeatInterval = 35;
-         windowManager.qtile.enable = true;
+        #windowManager.qtile.enable = true;
 };
   
   services.displayManager.ly.enable = true;
-  programs.niri.enable = true;
-
+  programs.hyprland.enable = true;
   services.xserver.xkb.layout = "br";
   services.xserver.xkb.variant = "abnt2";
   services.xserver.xkb.options = "eurosign:e,caps:escape";
@@ -56,7 +55,6 @@
     git
     alacritty
     librewolf
-    niri
     kitty
   ];
 
@@ -79,7 +77,6 @@
     };
 
   users.users.pedro.shell = pkgs.zsh;
-
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
