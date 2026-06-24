@@ -28,10 +28,13 @@
          autoRepeatDelay = 200;
          autoRepeatInterval = 35;
          windowManager.qtile.enable = true;
+         windowManager.i3 = {
+                enable = true;
+            };           
 };
   
   services.displayManager.ly.enable = true;
-  programs.hyprland.enable = true;
+  #programs.hyprland.enable = true;
   services.xserver.xkb.layout = "br";
   services.xserver.xkb.variant = "abnt2";
   services.xserver.xkb.options = "eurosign:e,caps:escape";
@@ -57,6 +60,7 @@
     librewolf
     kitty
     rofi
+    xclip
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];

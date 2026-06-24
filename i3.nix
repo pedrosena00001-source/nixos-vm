@@ -20,7 +20,7 @@
       in {
         "${mod}+Return" = "exec alacritty";
         "${mod}+d" = "exec rofi -show drun";
-        "${mod}+Shift+q" = "kill";
+        "${mod}+SHift+q" = "kill";
         "${mod}+Shift+c" = "reload";
         "${mod}+Shift+r" = "restart";
         "${mod}+Shift+e" = "exec i3-nagbar -t warning -m 'Sair do i3?' -B 'Sim' 'i3-msg exit'";

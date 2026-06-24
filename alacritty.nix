@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
  
-
-programs.alacritty = { 
+{
+  programs.alacritty = { 
          enable = true;
          settings = {
            window = {
@@ -32,3 +32,4 @@ programs.alacritty = {
            };
          };
        };
+     }
