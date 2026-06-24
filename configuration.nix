@@ -61,6 +61,7 @@
     kitty
     rofi
     xclip
+    fastfetch
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
