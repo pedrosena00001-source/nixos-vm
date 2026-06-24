@@ -56,6 +56,7 @@
     alacritty
     librewolf
     kitty
+    rofi
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
