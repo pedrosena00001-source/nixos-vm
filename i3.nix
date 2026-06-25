@@ -18,9 +18,9 @@
       keybindings = let
         mod = "Mod4";
       in {
-        "${mod}+Return" = "exec alacritty";
+        "${mod}+q" = "exec kitty";
         "${mod}+d" = "exec rofi -show drun";
-        "${mod}+SHift+q" = "kill";
+        "${mod}+c" = "kill";
         "${mod}+Shift+c" = "reload";
         "${mod}+Shift+r" = "restart";
         "${mod}+Shift+e" = "exec i3-nagbar -t warning -m 'Sair do i3?' -B 'Sim' 'i3-msg exit'";
