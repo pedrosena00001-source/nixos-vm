@@ -2,8 +2,8 @@
 
 {
   imports =
-    [ 
-      ./hardware-configuration.nix
+    [
+      ./hardware-configuration.nix 
       ./packages.nix
       ./zsh.nix
     ];
@@ -35,7 +35,7 @@
 };
   
   services.displayManager.ly.enable = true;
-  #programs.hyprland.enable = true;
+  programs.hyprland.enable = true;
   services.xserver.xkb.layout = "br";
   services.xserver.xkb.variant = "abnt2";
   services.xserver.xkb.options = "eurosign:e,caps:escape";

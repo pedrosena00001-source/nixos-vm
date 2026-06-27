@@ -27,6 +27,7 @@
                  gs = "git status";
                  gp = "git push origin main";
                  gpm = "git push origin master";
+                 ns = "nix-shell -p";
           };
     };
 }                               
