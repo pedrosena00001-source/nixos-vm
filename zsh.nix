@@ -22,6 +22,9 @@
                  v = "vim";
                  garbage = "sudo nix-collect-garbage -d";
                  cdd = "cd nixos-dotfiles";
+                 gm = "git commit -m";
+                 ga = "git add -A";
+                 gs = "git status";
           };
     };
 }                               
