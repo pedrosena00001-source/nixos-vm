@@ -11,7 +11,6 @@
     programs.zsh = {
             enable = true;
          };
-    home.file.".config/qtile".source = ./config/qtile;
    
 } 
  
