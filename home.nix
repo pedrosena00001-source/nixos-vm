@@ -11,7 +11,7 @@
     programs.zsh = {
             enable = true;
          };
-   
+    home.file.".config/kitty/kitty.conf".source = ./kitty/kitty.conf;   
 } 
  
    
