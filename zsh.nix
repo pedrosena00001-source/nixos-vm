@@ -25,6 +25,8 @@
                  gm = "git commit -m";
                  ga = "git add -A";
                  gs = "git status";
+                 gp = "git push origin main";
+                 gpm = "git push origin master";
           };
     };
 }                               
