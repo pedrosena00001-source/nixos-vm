@@ -4,7 +4,7 @@
   imports =
     [ 
       ./hardware-configuration.nix
-      
+      ./packages.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
@@ -51,19 +51,7 @@
   };
 
   programs.firefox.enable = true;
-
-  environment.systemPackages = with pkgs; [
-    vim 
-    wget
-    git
-    alacritty
-    librewolf
-    kitty
-    rofi
-    xclip
-    fastfetch
-  ];
-
+ 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   programs.zsh = {
           enable = true;
