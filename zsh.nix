@@ -14,6 +14,7 @@ programs.zsh = {
                   "history"
                   "docker"
           ];
+         };
           shellAliases = {                                                                        
                  ll = "ls -la";
                  sv = "sudo vim";
@@ -22,7 +23,6 @@ programs.zsh = {
                  garbage = "sudo nix-collect-garbage -d";
                  cdd = "cd nixos-dotfiles";
           };
-       };                           
     };                              
                                     
                                     
