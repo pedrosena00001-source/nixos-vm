@@ -4,6 +4,7 @@
     imports = [
          ./i3.nix
          ./alacritty.nix
+         ./hyprland.nix
        ];
     home.username = "pedro";
     home.homeDirectory = "/home/pedro";
