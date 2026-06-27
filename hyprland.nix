@@ -2,15 +2,15 @@
 {
   wayland.windowManager.hyprland = {
                  enable = true;
-                 packages = null;
+                 package = null;
              
 
                  extraConfig = ''
                  
                       ### MONITORS ###                                                                                                       
                       ################
-                      env = WLR_NO_HARDWAR_CURSORS,1
-                      emv = WLR_RENDERER,pixman
+                      env = WLR_NO_HARDWARE_CURSORS,1
+                      env = WLR_RENDERER,pixman
                       env = WLR_RENDERER_ALLOW_SOFTWARE,1
                       # See https://wiki.hyprland.org/Configuring/Monitors/
                       monitor=, HDMI-A-1,1920X1080@74.97,0X0,1
@@ -299,5 +299,6 @@
                       
                       # Fix some dragging issues with XWayland
                       windowrule = nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0
+         '';
        };
      }
