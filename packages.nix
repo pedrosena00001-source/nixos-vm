@@ -1,6 +1,6 @@
 { config, lib, pkgs, ... }:
-
-  environment.systemPackages = with pkgs; [
+{
+environment.systemPackages = with pkgs; [
     vim 
     wget
     git
@@ -10,5 +10,6 @@
     rofi
     xclip
     fastfetch
+    docker
   ];
-
+}
