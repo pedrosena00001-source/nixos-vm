@@ -13,15 +13,20 @@ programs.zsh = {
                   "sudo" 
                   "history"
                   "docker"
-            shellAliases = {
-                   ll = "ls -la";
-                   sv = "sudo vim";
-                   update = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles#nixos-btw";
-                   v = "vim";
-                   garbage = "sudo nix-collect-garbage -d";
-                   cdd = "cd nixos-dotfiles";
-             };
- 
           ];
-       };
-    };
+          shellAliases = {                                                                        
+                 ll = "ls -la";
+                 sv = "sudo vim";
+                 update = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles#nixos-btw";
+                 v = "vim";
+                 garbage = "sudo nix-collect-garbage -d";
+                 cdd = "cd nixos-dotfiles";
+          };
+       };                           
+    };                              
+                                    
+                                    
+                                    
+                                    
+                                    
+              
