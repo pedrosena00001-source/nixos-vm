@@ -2,10 +2,10 @@
 {
       programs.zsh = {
           enable = true;
-          autosuggestions.enable = true;    
+          autosuggestion.enable = true;    
           syntaxHighlighting.enable = true; 
           enableCompletion = true;
-         ohMyZsh = {
+         oh-my-zsh = {
               enable = true;
               theme = "cloud";
               plugins = [
@@ -15,6 +15,13 @@
                   "docker"
           ];
          };
+	    plugins = [
+  		{
+	          name = "vi-mode";
+                  src = pkgs.zsh-vi-mode;
+		  file = "share/zsh-vi-mode/zsh-vi-mode.plugin.zsh";
+	  }
+	];
           shellAliases = {                                                                        
                  ll = "ls -la";
                  sv = "sudo vim";

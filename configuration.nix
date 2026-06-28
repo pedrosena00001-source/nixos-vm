@@ -5,7 +5,6 @@
     [
       ./hardware-configuration.nix 
       ./packages.nix
-      ./zsh.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
@@ -52,9 +51,11 @@
   };
 
   programs.firefox.enable = true;
- 
+  programs.zsh.enable = true;
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   users.users.pedro.shell = pkgs.zsh;
+  
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;

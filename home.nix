@@ -2,9 +2,8 @@
 
 {
     imports = [
-         ./i3.nix
-         ./alacritty.nix
          ./hyprland.nix
+	 ./zsh.nix
        ];
     home.username = "pedro";
     home.homeDirectory = "/home/pedro";
