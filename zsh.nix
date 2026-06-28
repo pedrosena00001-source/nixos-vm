@@ -28,6 +28,8 @@
                  gp = "git push origin main";
                  gpm = "git push origin master";
                  ns = "nix-shell -p";
+                 sh = "shutdown -h now";
+ 		 re = "reboot";
           };
     };
 }                               

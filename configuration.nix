@@ -29,9 +29,9 @@
          autoRepeatDelay = 200;
          autoRepeatInterval = 35;
          #windowManager.qtile.enable = true;
-         windowManager.i3 = {
-                enable = true;
-            };           
+        #windowManager.i3 = {
+        #        enable = true;
+        #    };           
 };
   
   services.displayManager.ly.enable = true;
