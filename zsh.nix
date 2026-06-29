@@ -30,13 +30,14 @@
                  garbage = "sudo nix-collect-garbage -d";
                  cdd = "cd nixos-dotfiles";
                  gm = "git commit -m";
-                 ga = "git add -A";
+                 ga = "git add";
                  gs = "git status";
                  gp = "git push origin main";
                  gpm = "git push origin master";
                  ns = "nix-shell -p";
                  sh = "shutdown -h now";
  		 re = "reboot";
+                 gaa = "git add -A";
           };
     };
 }                               

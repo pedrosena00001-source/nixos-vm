@@ -11,6 +11,7 @@
       env = WLR_NO_HARDWARE_CURSORS,1
       env = WLR_RENDERER,pixman
       env = WLR_RENDERER_ALLOW_SOFTWARE,1
+      env = XCURSOR_THEME,Adwaita
       # See https://wiki.hyprland.org/Configuring/Monitors/
       monitor = HDMI-A-1,1920x1080@75,0x0,1
 
@@ -80,9 +81,9 @@
           border_size = 2
 
           # https://wiki.hyprland.org/Configuring/Variables/#variable-types for info about colors
-          col.active_border = rgba(245, 40, 145) rgba(245, 40, 145, 1.0) 45deg
+          col.active_border = rgba(2b2b2bff)
 	
-          col.inactive_border = rgba(0, 40, 145, 1.0)
+          col.inactive_border = rgba(777777aa)
 
           # Set to true enable resizing windows by clicking and dragging on borders and gaps
           resize_on_border = false
