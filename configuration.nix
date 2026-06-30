@@ -1,10 +1,11 @@
-{ config, lib, pkgs, ... }:
+	{ config, lib, pkgs, ... }:
 
 {
   imports =
     [
       ./hardware-configuration.nix 
       ./packages.nix
+      ./fonts.nix
     ];
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -28,7 +29,6 @@
       tree
     ];
   };
-  programs.firefox.enable = true;
   programs.zsh.enable = true;
   programs.virt-manager.enable = true;
   virtualisation.libvirtd.enable = true;
