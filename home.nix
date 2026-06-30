@@ -4,6 +4,7 @@
     imports = [
          ./hyprland.nix
 	 ./zsh.nix
+ 	 ./nvim.nix
        ];
     home.username = "pedro";
     home.homeDirectory = "/home/pedro";

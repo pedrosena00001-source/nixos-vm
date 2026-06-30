@@ -24,7 +24,7 @@
 	];
           shellAliases = {                                                                        
                  ll = "ls -la";
-                 sv = "sudo vim";
+                 sv = "sudo nvim";
                  up = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles#nixos-btw";
                  v = "vim";
                  garbage = "sudo nix-collect-garbage -d";
