@@ -12,7 +12,7 @@ environment.systemPackages = with pkgs; [
     gh
     hyprpaper
     adwaita-icon-theme
-    neovim
     curl
+    brave
   ];
 }
