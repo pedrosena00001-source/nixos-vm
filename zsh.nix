@@ -24,7 +24,7 @@
 	];
           shellAliases = {                                                                        
                  ll = "ls -la";
-                 sv = "sudo nvim";
+                 sv = "sudo -E nvim";
                  up = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles#nixos-btw";
                  v = "vim";
                  garbage = "sudo nix-collect-garbage -d";
@@ -38,6 +38,7 @@
                  sh = "shutdown -h now";
  		 re = "reboot";
                  gaa = "git add -A";
+		 sd = "sudo docker";
           };
     };
 }                               

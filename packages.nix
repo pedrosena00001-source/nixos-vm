@@ -14,5 +14,6 @@ environment.systemPackages = with pkgs; [
     adwaita-icon-theme
     curl
     brave
+    waybar
   ];
 }

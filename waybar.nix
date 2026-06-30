@@ -20,8 +20,8 @@
           format = "{icon}";
           on-click = "activate";
           format-icons = {
-            active = "";
-            default = "";
+            active = "";
+            default = "";
           };
           persistent-workspaces = {
             "*" = 5;
@@ -80,7 +80,7 @@
       };
     };
 
-    style = ''
+   style = ''
       * {
         font-family: "JetBrainsMono Nerd Font";
         font-size: 13px;
@@ -88,68 +88,54 @@
         border-radius: 0;
         min-height: 0;
       }
-
       window#waybar {
-        background-color: rgba(30, 30, 46, 0.85); /* Catppuccin Mocha base */
-        color: #cdd6f4;
+        background-color: rgba(15, 10, 10, 0.9); /* preto puxado pro marrom */
+        color: #e0c4b8;
         transition-property: background-color;
         transition-duration: 0.3s;
       }
-
       #workspaces button {
         padding: 0 8px;
-        color: #cdd6f4;
+        color: #c9a89a;
         background: transparent;
       }
-
       #workspaces button.active {
-        color: #cba6f7;
-        border-bottom: 2px solid #cba6f7;
+        color: #b5483c;
+        border-bottom: 2px solid #b5483c;
       }
-
       #workspaces button:hover {
-        background: rgba(203, 166, 247, 0.15);
+        background: rgba(181, 72, 60, 0.15);
       }
-
       #window {
-        color: #a6adc8;
+        color: #a88d80;
         padding: 0 10px;
       }
-
       #clock {
         font-weight: bold;
-        color: #f5c2e7;
+        color: #c1453a;
         padding: 0 12px;
       }
-
       #cpu, #memory, #disk, #network, #tray {
         padding: 0 10px;
-        color: #cdd6f4;
+        color: #d6b8aa;
       }
-
       #cpu {
-        color: #a6e3a1;
+        color: #b5483c;
       }
-
       #memory {
-        color: #fab387;
+        color: #8a3f2e;
       }
-
       #disk {
-        color: #89b4fa;
+        color: #a85c4a;
       }
-
       #network {
-        color: #94e2d5;
+        color: #c1453a;
       }
-
       #network.disconnected {
-        color: #f38ba8;
+        color: #5c1f1a;
       }
-
       #tray {
         margin-right: 6px;
       }
-    '';
-  };
+    '';  };
 }
