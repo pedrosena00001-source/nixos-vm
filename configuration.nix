@@ -23,14 +23,19 @@
   services.xserver.xkb.options = "eurosign:e,caps:escape";
   users.users.pedro = {
     isNormalUser = true;
-   extraGroups = [ "wheel" ]; 
+   extraGroups = [ "wheel" "docker" ]; 
     packages = with pkgs; [
       tree
     ];
   };
   programs.firefox.enable = true;
   programs.zsh.enable = true;
+  programs.virt-manager.enable = true;
+  virtualisation.libvirtd.enable = true;
+  virtualisation.spiceUSBRedirection.enable = true;
+  users.groups.libvirtd.members = ["pedro"];
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  virtualisation.docker.enable = true;
   users.users.pedro.shell = pkgs.zsh;
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
