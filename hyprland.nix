@@ -35,8 +35,8 @@
       # Autostart necessary processes (like notifications daemons, status bars, etc.)
       # Or execute your favorite apps at launch like this:
 
-      # exec-once = $terminal
-      # exec-once = nm-applet &
+        #exec-once = $terminal
+        #exec-once = nm-applet &
 	exec-once = hyprpaper &
 	exec-once = waybar &
 
@@ -83,7 +83,7 @@
           # https://wiki.hyprland.org/Configuring/Variables/#variable-types for info about colors
           col.active_border = rgba(2b2b2bff)
 	
-          col.inactive_border = rgba(777777aa)
+          col.inactive_border = rgba(f38ba8ff)
 
           # Set to true enable resizing windows by clicking and dragging on borders and gaps
           resize_on_border = false
