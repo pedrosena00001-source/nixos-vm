@@ -38,7 +38,7 @@
       # exec-once = $terminal
       # exec-once = nm-applet &
 	exec-once = hyprpaper &
-
+	exec-once = waybar &
 
       #############################
       ### ENVIRONMENT VARIABLES ###
