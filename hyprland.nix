@@ -13,8 +13,7 @@
       env = WLR_RENDERER_ALLOW_SOFTWARE,1
       env = XCURSOR_THEME,Adwaita
       # See https://wiki.hyprland.org/Configuring/Monitors/
-      monitor = HDMI-A-1,1920x1080@75,0x0,1
-
+      monitor = Monitor Virtual-1,1920x1080@75,0x0,1
 
       ###################
       ### MY PROGRAMS ###
@@ -26,6 +25,7 @@
       $terminal = kitty
       $fileManager = dolphin
       $menu = rofi -show drun
+      $browser = brave
 
 
       #################
@@ -37,7 +37,7 @@
 
       # exec-once = $terminal
       # exec-once = nm-applet &
-      # exec-once = waybar & hyprpaper & firefox
+	exec-once = hyprpaper &
 
 
       #############################
@@ -228,6 +228,7 @@
       bind = $mainMod, R, exec, $menu
       bind = $mainMod, P, pseudo, # dwindle
       bind = $mainMod, J, togglesplit, # dwindle
+      bind = $mainMod, F, exec, $browser
 
       # Move focus with mainMod + arrow keys
       bind = $mainMod, left, movefocus, l
