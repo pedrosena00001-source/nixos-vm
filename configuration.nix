@@ -1,4 +1,4 @@
-	{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   imports =
@@ -34,11 +34,14 @@
   virtualisation.libvirtd.enable = true;
   virtualisation.spiceUSBRedirection.enable = true;
   users.groups.libvirtd.members = ["pedro"];
+  services.spice-vdagentd.enable = true;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   virtualisation.docker.enable = true;
   users.users.pedro.shell = pkgs.zsh;
-  # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
+  services.openssh = {
+  		enable = true;
+		settings.PasswordAuthentication = false;
+	};
   system.stateVersion = "26.05";
 
 }

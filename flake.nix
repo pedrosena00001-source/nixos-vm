@@ -1,11 +1,16 @@
 {
     description ="Nixos from Scratch"; 
     inputs = {
-           nixpkgs.url = "nixpkgs/nixos-25.05";
-           home-manager = {
+           nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+	   home-manager = {
                       url ="github:nix-community/home-manager/release-25.05";
                       inputs.nixpkgs.follows = "nixpkgs";
             };
+	    mangowc = {
+	    url = "github:nix-community/release-25.05";
+	    inputs.nixpkgs.follows = "nixpkgs";
+	};
+
     };
 
    outputs = { self, nixpkgs, home-manager, ... }: {
